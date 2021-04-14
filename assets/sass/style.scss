@@ -1,0 +1,12 @@
+// Import Utils
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/seting";
+
+// Sections
+@import "./section/section";
+@import "./section/section__image";
+@import "./section/section__info";
+@import "./section/section__price";
+@import "./section/section__close";

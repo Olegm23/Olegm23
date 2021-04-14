@@ -1,0 +1,31 @@
+.section {
+	max-width: $maw;
+	margin: 0 auto;
+	position: relative;
+	padding: 40px 28px;
+	@include _550 {
+		padding: 40px 8px;
+	}
+
+	.container {
+		background: $white;
+		display: flex;
+		justify-content: space-between;
+		padding: 24px 0;
+		position: relative;
+		@include _914 {
+			flex-direction: column;
+		}
+		@include _550 {
+			padding: 24px 20px;
+		}
+
+		.section__right {
+			display: flex;
+			@include _550 {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+}

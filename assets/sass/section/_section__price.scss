@@ -1,0 +1,80 @@
+.section__price {
+	width: 100%;
+	max-width: 350px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-right: 32px;
+	padding-left: 31px;
+	border-left: 1px solid #f0eeeb;
+	@include _914 {
+		max-width: 100%;
+		border-left: none;
+		border-top: 1px solid #f0eeeb;
+		margin-top: 24px;
+		padding-top: 24px;
+	}
+	@include _550 {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.title {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		color: $grey-title;
+		margin-top: 5px;
+
+		&:last-child {
+			margin-top: 12px;
+		}
+		.blue {
+			color: $blue;
+		}
+		.red {
+			color: $red;
+		}
+	}
+	.price {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 36px;
+		font-feature-settings: "liga" off;
+	}
+
+	.price_button {
+		display: flex;
+		align-items: center;
+		background: $yellow;
+		border-radius: 6px;
+		padding: 12px 50px;
+		@include _914 {
+			justify-content: center;
+			margin-top: 24px;
+		}
+		img {
+			margin-right: 10px;
+		}
+		p {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			font-feature-settings: "liga" off;
+			color: $grey-base;
+			@include _550 {
+				letter-spacing: -0.3px;
+			}
+		}
+
+		&:hover {
+			background: $yellow-hover;
+		}
+		&:active {
+			background: $yellow-active;
+		}
+	}
+}
